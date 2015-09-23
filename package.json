@@ -1,0 +1,45 @@
+{
+  "name": "good-to-fly",
+  "version": "1.0.0",
+  "description": "Lets you know if it's good to fly in your area",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/destos/good-to-fly.git"
+  },
+  "keywords": [
+    "quad",
+    "multirotor",
+    "flying",
+    "RC",
+    "rain",
+    "weather",
+    "wind"
+  ],
+  "author": "Patrick Forringer",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/destos/good-to-fly/issues"
+  },
+  "homepage": "https://github.com/destos/good-to-fly#readme",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "main": "./node/index",
+  "bin": {
+    "gtf": "./bin/gtf"
+  },
+  "scripts": {
+    "test": "mocha",
+    "postinstall": "make",
+    "start": "./bin/gtf $FORCASTIO_API_TOKEN"
+  },
+  "dependencies": {
+    "async": "^1.4.2",
+    "babel": "^5.8.23",
+    "commander": "^2.8.1",
+    "debug": "^2.2.0",
+    "express": "^4.13.3",
+    "hostenv": "^1.0.3",
+    "superagent": "^1.4.0"
+  }
+}
