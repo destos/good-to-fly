@@ -5,10 +5,13 @@ BABEL = ./node_modules/.bin/babel
 
 .PHONY: clean
 
-all: $(OUTJS)
+all: node/ $(OUTJS)
 
 clean:
 	rm -rf node/
 
 node/%.js: lib/%.js
 	$(BABEL) $^ > $@
+
+node/:
+	mkdir -p node/
