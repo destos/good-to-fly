@@ -18,7 +18,10 @@
     <div class="row">
       <div class="col-md-12">
         {{#with (lookup ../locations @key)}}
-        <h2>{{address}} <small class="text-muted">{{geo.lat}}:{{geo.lng}}</small></h2>
+        <h2 class="pull-left">{{address}} <small class="text-muted">{{geo.lat}}:{{geo.lng}}</small></h2>
+        <div class="pull-right">
+          <a href="/{{@key}}/is-it-good.json" class="label label-info">json</a>
+        </div>
         {{/with}}
       </div>
     </div>
@@ -26,7 +29,6 @@
       <div class="col-md-12">
         <h3>Today</h3>
       </div>
-      <a href="/{{@key}}/is-it-good.json">location.json</a>
       {{this.currently}}
     </div> --}}
     <div class="row coming-up">
