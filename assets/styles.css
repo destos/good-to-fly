@@ -1,0 +1,50 @@
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 30rem;
+}
+
+.forcasts {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: #f7f7f7;
+}
+
+.coming-up .progress{
+  margin-bottom: 0;
+}
+
+/*.coming-up .progress::-webkit-progress-bar {
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0px 0.1rem 0.2rem rgba(0,0,0,0.08);
+}*/
+
+.coming-up .card-text{
+  margin-bottom: 0.5rem;
+}
+
+.coming-up .card-text:last-child{
+  margin-bottom: 0;
+}
+
+footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}

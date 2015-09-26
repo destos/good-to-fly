@@ -13,7 +13,7 @@ program
   .option('-h, --hostname <hostname>', 'Hostname to listen on [$HOSTNAME or 0.0.0.0]', require('hostenv').HOSTNAME || '0.0.0.0')
   .option('-l, --locations [<locations>]', 'One or more comma-separated addresses/zipcodes/places to poll forcast information [$LOCATIONS]', process.env.LOCATIONS)
   .option('-u, --units <units>', 'Units returned by the forcast.io api [$FORCAST_UNITS]', process.env.FORCAST_UNITS)
-  .option('-i, --interval <int>', 'How frequently (ms) to poll forcast.io [$FORCAST_INTERVAL or 3600000] ', process.env.FORCAST_INTERVAL || 3600000)
+  .option('-i, --interval <int>', 'How frequently (ms) to poll forcast.io [$FORCAST_INTERVAL or 3600000 (1 hour)]', process.env.FORCAST_INTERVAL || 3600000)
   .option('-s, --silent', 'Do not print out warns or errors')
   .option('-c, --css <file>', 'Full URL to a custom CSS file to use on the main page')
   .parse(process.argv);
